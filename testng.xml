@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator Test Suite">
+    <listeners>
+        <listener class-name="calculator.listeners.TestListeners"></listener>
+    </listeners>
+    <test name="Subtraction Test">
+        <classes>
+            <class name="calculator.tests.SubtractionTest"></class>
+        </classes>
+    </test>
+    <test name="Addition Test">
+        <classes>
+            <class name="calculator.tests.AdditionTest"></class>
+        </classes>
+    </test>
+    <test name="Multiplying Test">
+        <classes>
+            <class name="calculator.tests.MultiplyingTest"></class>
+        </classes>
+    </test>
+    <test name="Dividing Test">
+        <classes>
+            <class name="calculator.tests.DividingTest"></class>
+        </classes>
+    </test>
+</suite>
