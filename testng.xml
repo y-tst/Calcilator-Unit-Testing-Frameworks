@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Calculator Test Suite">
+<suite name="Calculator Test Suite" verbose="10" parallel="tests" thread-count="3">
     <listeners>
         <listener class-name="calculator.listeners.TestListeners"></listener>
     </listeners>
+    <test name="Sinus check">
+        <groups>
+            <run>
+                <exclude name="Secondary group"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="calculator.tests.SinusTest"></class>
+        </classes>
+    </test>
     <test name="Subtraction Test">
         <classes>
             <class name="calculator.tests.SubtractionTest"></class>
@@ -24,4 +34,10 @@
             <class name="calculator.tests.DividingTest"></class>
         </classes>
     </test>
+    <test name="Dividing By Zero Test">
+        <classes>
+            <class name="calculator.tests.DividingByZeroTest"></class>
+        </classes>
+    </test>
+
 </suite>

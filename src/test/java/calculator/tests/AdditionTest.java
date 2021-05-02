@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 public class AdditionTest extends GenericTestData {
 
     @Test(dataProvider = "Values for addition")
-    public void sumOfTwoNumbers(long firstTerm, long secondTerm, long sumResult) {
-        long result = calculator.sum(firstTerm, secondTerm);
-        Assert.assertEquals(result, sumResult, "Incorrect result of addition");
+    public void sumOfTwoNumbers(long firstTerm, long secondTerm, long expectedResult) {
+        long actualResult = calculator.sum(firstTerm, secondTerm);
+        Assert.assertEquals(actualResult, expectedResult, "Incorrect result of addition");
     }
 
     @DataProvider(name = "Values for addition")

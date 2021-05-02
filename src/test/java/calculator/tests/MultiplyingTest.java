@@ -7,8 +7,8 @@ public class MultiplyingTest extends GenericTestData {
 
     @Test
     public void twoMultipleFive() {
-        long result = calculator.mult(2, 5);
-        Assert.assertEquals(result, 10, "Incorrect result of multiplying");
+        long actualResult = calculator.mult(2, 5);
+        Assert.assertEquals(actualResult, 10, "Incorrect result of multiplying");
     }
 
 }

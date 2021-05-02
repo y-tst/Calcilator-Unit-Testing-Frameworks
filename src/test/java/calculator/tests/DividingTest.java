@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 public class DividingTest extends GenericTestData {
 
     @Test
-    public void fiveMinusThree() {
-        long result = calculator.div(6, 2);
-        Assert.assertTrue(result == 3, "Incorrect result of dividing");
+    public void sixDivideTwo() {
+        long actualResult = calculator.div(6, 2);
+        Assert.assertEquals(actualResult, 3, "Incorrect result of dividing");
     }
 }
