@@ -12,12 +12,11 @@ public class TestListeners implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        logger.info(String.format("Input parameters for %s", result.getName()));
-        logger.info(String.valueOf(Arrays.asList(result.getParameters())));
+        logger.info(String.format("Input parameters: %s %s", result.getName(), Arrays.asList(result.getParameters())));
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        logger.info(String.format("Successful performing of the operation:  %s", result.getName()));
+        logger.info(String.format("Successful performing of the operation:  %s", Thread.currentThread().getId()));
     }
 }

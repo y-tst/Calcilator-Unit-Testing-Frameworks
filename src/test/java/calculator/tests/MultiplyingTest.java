@@ -10,5 +10,4 @@ public class MultiplyingTest extends GenericTestData {
         long actualResult = calculator.mult(2, 5);
         Assert.assertEquals(actualResult, 10, "Incorrect result of multiplying");
     }
-
 }

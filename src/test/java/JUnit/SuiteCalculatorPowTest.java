@@ -16,7 +16,7 @@ public class SuiteCalculatorPowTest {
     @Test
     public void minusFivePowTwo() {
         Calculator calculator = new Calculator();
-        long actualResult = (long) calculator.pow(-5, 3);
-        Assert.assertEquals(actualResult, -125, "Incorrect result of Pow operation");
+        long actualResult = (long) calculator.pow(-0.2, 3);
+        Assert.assertEquals(actualResult, -0.8, "Incorrect result of Pow operation");
     }
 }

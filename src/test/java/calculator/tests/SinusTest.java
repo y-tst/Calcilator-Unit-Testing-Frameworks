@@ -24,5 +24,4 @@ public class SinusTest extends GenericTestData {
         double result = round(calculator.sin(Math.PI / 4));
         Assert.assertEquals(result, 0.7072);
     }
-
 }
